@@ -1,0 +1,9 @@
+<Window size="120,120" caption="0,0,0,30" layeredimage="" layeredopacity="255" bktrans="true" >
+    <Container name="progressbox" enabled="true" >
+        <HorizontalLayout pos="41,368,0,0"  bkcolor="#00000000">
+		    <!-- <Progress name="install" float="true" pos="41,68,0,0" width="422" height="10" bkimage="Image/progressb.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" foreimage="Image/progressf.png" min="0" max="100" value="0" hor="true" />
+		    <Label name="label_display" float="true" pos="41,42,0,0" width="407" height="20" textcolor="#00808080" disabledtextcolor="#FFA7A6AA" font="1" /> -->
+            <GifAnim name="loading_gif" bkimage="Image/loading.gif" visible="true" autoplay="true" float="true" pos="0,0,0,0" autosize="false" width="120" height="120" />
+	    </HorizontalLayout>  
+    </Container>
+</Window>
