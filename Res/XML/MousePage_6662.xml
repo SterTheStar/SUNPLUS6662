@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1030,660">  <!--AP页面大小-->
+     <Default shared="true" name="CheckBox" value="textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#FFFFFFFF&quot; selectedtextcolor=&quot;#ffeb8bfa&quot; disabledtextcolor=&quot;#FFA7A6AA&quot;     
+                                                textpadding=&quot;25,2,0,0&quot; align=&quot;center&quot; 
+                                                selectedimage=&quot;file='Image/CbS_E.png' dest='0,0,16,16'&quot; 
+                                                normalimage=&quot;file='Image/CbS_D.png' dest='0,0,16,16'&quot;" />
+    <!--Button 默认属性 -->         
+   <Default name="Button" shared="true" value="textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#FFFFFFFF&quot; selectedtextcolor=&quot;#FFFFFFFF&quot; 
+                                              disabledtextcolor=&quot;#FFFFFFFF&quot; pushedtextcolor=&quot;#FFFFFFFF&quot;"/>
+        <Default name="Edit" shared="true" value="textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#FFFFFFFF&quot;" />        
+    
+     <!--主页面设置-->
+    <VerticalLayout name="root" name="device_Mouse_6662_page"  enabled="false"> 
+      <HorizontalLayout float="true" pos="58,0,0,0"  width="400"  height="150"  > 
+        <!--办公模式, 这里的pushtextcolor控制文本变色-->
+        <Button name = "profile1_6662" text="*115" resourcetext="true" float="true" pos="175,0,0,0"  width="129" height="32"                 
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Main_01.png" hotimage="Image/Main_02.png" pushedimage="Image/Main_03.png" font="3" visible="false"/>
+        <!--游戏模式-->
+        <Button name = "profile2_6662" text="*116" resourcetext="true" float="true" pos="305,0,0,0"  width="129" height="32"  
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Main_01.png" hotimage="Image/Main_02.png" pushedimage="Image/Main_03.png" font="3" visible="false"/>
+
+        <!--新增-->
+        <Button name = "profile_6662" resourcetext="true" float="true" pos="0,40,0,0" enabled="true" width="60" height="49"  normalimage="Image/Office_01.png" hotimage="Image/Office_02.png" pushedimage="Image/Office_02.png" font="3"  visible="true"/>
+
+        <!--高级设置-->      
+        <Button name = "advanced_Settings_6662"   resourcetext="true" float="true" pos="65,40,0,0"  width="60" height="49"  
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Advanced_01.png" hotimage="Image/Advanced_02.png" pushedimage="Image/Advanced_02.png"  font="3"/>
+        <!--灯光设置-->
+        <Button name = "led_Settings_6662"   resourcetext="true" float="true" pos="130,40,0,0"  width="60" height="49"  
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Led_01.png" hotimage="Image/Led_02.png" pushedimage="Image/Led_02.png"  font="3"/>
+        <!--宏设置-->
+        <Button name = "marco_manager_6662"   resourcetext="true" float="true" pos="195,40,0,0"  width="60" height="49"  
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Macro_01.png" hotimage="Image/Macro_02.png" pushedimage="Image/Macro_02.png"  font="3"/>   
+        <!--枪键宏设置--> 
+        <Button name = "fire_macro_Settings_6662" text="*114" resourcetext="true" float="true" pos="790,0,0,0"  width="130" height="32" 
+                textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000"
+                align="center" normalimage="Image/Main_01.png" hotimage="Image/Main_02.png" pushedimage="Image/Main_03.png" visible="false" font="3"/>
+
+      </HorizontalLayout> 
+
+
+      <!--办公模式页面设置-->
+      <AnimationTabLayout name="Setting_switch_6662"  float="true" pos="0,105,0,0" width="1030" height="450">
+        <Container float="true" pos="0,0,0,0" width="1030" height="450" bkimage="Image/mouse_key_bg.png">
+          <Container name="profile1_page_6662" enabled="true" userdata="12">
+            <!--新增-->
+            <GifAnim name="mouse_led_gif_6662" bkimage="Image/mouse_led.gif" pos="445,20,0,0" float="true" autoplay="false" float="true" autosize="false" width="400" height="400" visible="false"/>
+            <Button name = "mouse_led_gif_button_6662" float="true" pos="445,20,0,0" enabled="true" width="400" height="400" richevent="true" bkcolor="#00000000" visible="false"/>
+
+            <!--左键-->
+            <Button name = "profile_key_6662_1" text="*054" resourcetext="true" downleave="true" float="true" pos="110,89,0,0"  width="180" height="30"   richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center" font="3"/> 
+            <!--右键-->
+            <Button name = "profile_key_6662_4" text="*055" resourcetext="true" downleave="true" float="true" pos="110,130,0,0" width="180" height="30"    richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center" font="3"/> 
+             <!--中键-->
+            <Button name = "profile_key_6662_7" text="*056" resourcetext="true" downleave="true" float="true" pos="110,170,0,0"  width="180" height="30"   richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center" font="3"/> 
+            <!--前进键-->
+            <Button name = "profile_key_6662_5" text="*078" resourcetext="true" downleave="true" float="true" pos="110,210,0,0"  width="180" height="30"    richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center" font="3"/> 
+             <!--后退键-->
+            <Button name = "profile_key_6662_2" text="*079" resourcetext="true" downleave="true" float="true" pos="110,250,0,0"  width="180" height="30"   richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center" font="3"/> 
+            <!--DPI循环键-->
+            <Button name = "profile_key_6662_8" text="*089" resourcetext="true" downleave="true" float="true" pos="110,290,0,0"  width="180" height="30"  enabled="true"   
+            textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FF000000"  richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"   font="3"/> 
+            <!--DPI+键-->
+            <Button name = "profile_key_6662_6" text="*090" resourcetext="true" downleave="true" float="true" pos="110,315,0,0"  width="180" height="30"  enabled="true"  visible="false" 
+            textcolor="#FFFFFFFFF" disabledtextcolor="#FFFFFFFF"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FF000000" richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"   font="3"/> 
+            <!--DPI-键-->
+            <Button name = "profile_key_6662_9" text="*091" resourcetext="true" downleave="true" float="true" pos="110,330,0"  width="180" height="30"  enabled="true"  visible="false" 
+            textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FF000000" richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"   font="3"/> 
+             <!--火力键1-->
+            <Button name = "profile_key_6662_3" text="*092" resourcetext="true" downleave="true" float="true" pos="110,340,0,0" width="180" height="30" enabled="true"    visible="false" 
+            textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FF000000" richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"    font="3"/> 
+            <!--禁用键-->
+            <Button name = "profile_key_6662_10" text="*093" resourcetext="true" downleave="true" float="true" pos="780,135,0,0" width="180" height="30"  enabled="true"  visible="false"     
+            textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FF000000" richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"   font="3"/> 
+            <!--禁用键-->
+            <Button name = "profile_key_6662_11" text="*094" resourcetext="true" downleave="true" float="true" pos="110,330,0,0" width="180" height="30"  enabled="true"      
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"    font="3"/> 
+            <!--禁用键-->
+            <Button name = "profile_key_6662_12" text="*095" resourcetext="true" downleave="true" float="true" pos="780,225,0,0"  width="180" height="30"  enabled="true"  visible="false"  
+            textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA"  hottextcolor="#FF000000" pushedtextcolor="#FF000000" richevent="true"
+            align="center" normalimage="Image/KeyS_01.png" hotimage="Image/KeyS_02.png" pushedimage="Image/KeyS_03.png" align="center"    font="3"/>  
+
+
+<!--左键新增-->
+            <Button name = "profile_key_icon_6662_1"  float="true" pos="530,80,0,0" enabled="true" width="32" height="32" visible="false"
+                  normalimage="Image/KeyNumbers/number1-up.png" hotimage="Image/KeyNumbers/number1-down.png" pushedimage="Image/KeyNumbers/number1-down.png"/>
+          </Container>
+<!--右键新增-->
+            <Button name = "profile_key_icon_6662_4"  float="true" pos="650,80,0,0" enabled="true" width="32" height="32"   visible="false"
+            normalimage="Image/KeyNumbers/number2-up.png" hotimage="Image/KeyNumbers/number2-down.png" pushedimage="Image/KeyNumbers/number2-down.png"/>
+<!--中键新增-->
+            <Button name = "profile_key_icon_6662_7"  float="true" pos="590,120,0,0" enabled="true" width="32" height="32"  visible="false" 
+            normalimage="Image/KeyNumbers/number3-up.png" hotimage="Image/KeyNumbers/number3-down.png" pushedimage="Image/KeyNumbers/number3-down.png"/>
+<!--前进新增-->
+            <Button name = "profile_key_icon_6662_5"  float="true" pos="470,180,0,0" enabled="true" width="32" height="32"  visible="false" 
+            normalimage="Image/KeyNumbers/number4-up.png" hotimage="Image/KeyNumbers/number4-down.png" pushedimage="Image/KeyNumbers/number4-down.png"/>
+<!--后退新增-->
+            <Button name = "profile_key_icon_6662_2"  float="true" pos="480,240,0,0" enabled="true" width="32" height="32"  visible="false" 
+            normalimage="Image/KeyNumbers/number5-up.png" hotimage="Image/KeyNumbers/number5-down.png" pushedimage="Image/KeyNumbers/number5-down.png"/>
+ <!--DPI循坏新增-->
+            <Button name = "profile_key_icon_6662_8"  float="true" pos="345,280,0,0" enabled="true" width="32" height="32"  visible="false"  
+            normalimage="Image/KeyNumbers/number6-up.png" hotimage="Image/KeyNumbers/KeyS_02.png" pushedimage="Image/KeyNumbers/KeyS_02.png"/>
+<!--DPI+新增-->
+            <Button name = "profile_key_icon_6662_6"  float="true" pos="625,170,0,0" enabled="true" width="32" height="32"   visible="false"
+            normalimage="Image/KeyNumbers/number6-up.png" hotimage="Image/KeyNumbers/number6-down.png" pushedimage="Image/KeyNumbers/number6-down.png"/>
+<!--DPI-新增-->
+            <Button name = "profile_key_icon_6662_9"  float="true" pos="625,210,0,0" enabled="true" width="32" height="32"   visible="false"
+            normalimage="Image/KeyNumbers/number7-up.png" hotimage="Image/KeyNumbers/number7-down.png" pushedimage="Image/KeyNumbers/number7-down.png"/>   
+<!--新增-->
+            <Button name = "profile_key_icon_6662_3"  float="true" pos="375,460,0,0" enabled="true" width="32" height="32"  visible="false"  
+            normalimage="Image/KeyNumbers/KeyS_01.png" hotimage="Image/KeyNumbers/KeyS_02.png" pushedimage="Image/KeyNumbers/KeyS_02.png"/>
+<!--新增-->
+            <Button name = "profile_key_icon_6662_10"  float="true" pos="485,360,0,0" enabled="true" width="32" height="32"  visible="false"  
+            normalimage="Image/KeyNumbers/KeyS_01.png" hotimage="Image/KeyNumbers/KeyS_02.png" pushedimage="Image/KeyNumbers/KeyS_02.png"  />
+<!--新增-->
+            <Button name = "profile_key_icon_6662_11"  float="true" pos="485,360,0,0" enabled="true" width="32" height="32"   visible="false" 
+            normalimage="Image/KeyNumbers/KeyS_01.png" hotimage="Image/KeyNumbers/KeyS_02.png" pushedimage="Image/KeyNumbers/KeyS_02.png" />
+<!--新增-->
+            <Button name = "profile_key_icon_6662_12"  float="true" pos="485,420,0,0" enabled="true" width="32" height="32"   
+            normalimage="Image/KeyNumbers/KeyS_01.png" hotimage="Image/KeyNumbers/KeyS_02.png" pushedimage="Image/KeyNumbers/KeyS_02.png" visible="false"/>
+
+          <!--组合键设置-->
+          <VerticalLayout float="true" pos="460,240,0,0" width="280" height="180" visible="true">
+			        <CheckBox name="result_back_key_switch_led_6662" text="*171" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false"  />
+              <CheckBox name="result_middle_key_switch_mode_6662" text="*172" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/> 
+              <CheckBox name="result_cpi_key_switch_mode_6662" text="*173" resourcetext="true" width="0" autocalcwidth="true" align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/>
+              <CheckBox name="result_cpi+_key_switch_mode_6662" text="*174" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/>
+              <CheckBox name="result_cpi-_key_switch_mode_6662" text="*175" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/> 
+              <CheckBox name="result_back_key_switch_mode_6662" text="*176" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/>
+              <CheckBox name="result_forward_key_switch_mode_6662" text="*177" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false" group="backoption"/>
+              <CheckBox name="result_gun_key_switch_mode_6662" text="*178" resourcetext="true" width="0" autocalcwidth="true"  align="left" textpadding="20, 0, 0, 0" visible="false"/>
+		        </VerticalLayout> 
+
+<!--新增 子选项  -->
+            <HorizontalLayout  float="true" enabled="true" pos="55,40,0,0"  width="240" height="50" bkcolor="#0000ff00">
+              <Option name="option_profile1_6662" float="true" pos="0,0,0,0" width="120" height="40" 
+                    text="*115"  resourcetext="true" textcolor="#FFFFFFFF"  font="0" align="left" textpadding="50,0,0,0"
+                    normalimage="Image/officeMode_1.png" hotimage="Image/officeMode_2.png"  selectedimage="Image/officeMode_2.png"
+                    group="settingoption_6662"  />
+              <Option name="option_profile2_6662" enabled="true" float="true" pos="120,0,0,0" width="120" height="40" 
+                    text="*116"  resourcetext="true" textcolor="#FFFFFFFF" font="0" align="left" textpadding="50,0,0,0"
+                    normalimage="Image/gameMode_1.png" hotimage="Image/gameMode_2.png" selectedimage="Image/gameMode_2.png"
+                    group="settingoption_6662"  />
+            </HorizontalLayout>
+        </Container>
+      
+       <!--宏定义页面设置-->
+        <Container float="true" pos="90,15,0,0" width="850" height="420" enabled="true" bkimage="Image/mouse_macro_bg.png">
+          <Container name="macro_settings_page_6662">
+           <!-- <MacroSettingFolderPage_6662 name="MacroSetting_Folder_page_6662" /> -->
+             <MacroSettingFilePage_6662 name="MacroSetting_File_page_6662" /> 
+          </Container>
+        </Container> 
+       
+       <!--高级设置页面设置-->
+        <Container float="true" pos="90,15,0,0" enabled="true" width="850" height="420" bkcolor="000680C9" bkimage="Image/mouse_advance_bg.png">
+          <Container name="advanced_settings_page_6662" enabled="true">
+            <!--Fire Key文本-->
+            <label  text="*097" resourcetext="true" pos="440,20,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF" font="3"></label>
+            <!--Repeat文本-->
+            <label  text="*148" resourcetext="true" pos="440,50,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  font="2"></label>
+            <!--Repeat 次数编辑-->
+            <Edit name="result_fire_count1_6662" float="true" text="" numberonly="true" pos="540,50,0,0" width="50" height="22" textcolor="#ffffffff" 
+                  bordercolor="#ff898989" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Interval 文本编辑-->
+            <label  text="*149" resourcetext="true" pos="440,80,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF" font="2"></label>
+            <!--Interval 时间编辑-->
+            <Edit name="result_fire_time1_6662" float="true" text="" pos="540,80,0,0" numberonly="true" width="50" height="22" textcolor="#ffffffff" bordercolor="#ff898989" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Continuous 文本编辑-->
+            <label  text="*150" resourcetext="true" pos="440,110,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF" font="2"></label> 
+            <!--Continuous 选中框-->
+            <HorizontalLayout float="true" pos="540,110,0,0" width="30" height="40">
+			      <CheckBox name="result_fire_continue1_6662" text="" width="0" autocalcwidth="true" visible="true" /> 
+		        </HorizontalLayout>
+            
+            <!--Interva2 时间间隔 编辑-->
+            <Edit name="result_fire_count2_6662" float="true" text="" numberonly="true" pos="640,50,0,0" width="50" height="22" textcolor="#ffffffff" 
+                  bordercolor="#FFFFFFFF" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Continuous2 连续次数 编辑-->
+            <Edit name="result_fire_time2_6662" float="true" text="" pos="640,80,0,0" numberonly="true" width="50" height="22" textcolor="#ffffffff" 
+                  bordercolor="#FFFFFFFF" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Continuous2 选中框-->
+            <HorizontalLayout float="true" pos="640,110,0,0" width="80" height="40" >
+			        <CheckBox name="result_fire_continue2_6662" text="" width="0" autocalcwidth="true" height="22"  visible="true" /> 
+		        </HorizontalLayout>
+
+            <!--Interva3 时间间隔 编辑-->
+            <Edit name="result_fire_count3_6662" float="true" text="" numberonly="true" pos="740,50,0,0" width="50" height="22" textcolor="#ffffffff" 
+                  bordercolor="#FFFFFFFF" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Continuous3 连续次数 编辑-->
+            <Edit name="result_fire_time3_6662" float="true" text="" pos="740,80,0,0" numberonly="true" width="50" height="22" textcolor="#ffffffff" 
+                  bordercolor="#FFFFFFFF" bkcolor="#FF000000" enabled="true" font="2" align="center" nativebkcolor="#FF000000" bordercolor="#FF000000" bordersize="1"/>
+            <!--Continuous3 选中框-->
+            <HorizontalLayout float="true" pos="740,110,0,0" width="80" height="40" >
+			        <CheckBox name="result_fire_continue3_6662" text="" width="0" autocalcwidth="true"  visible="true" /> 
+		        </HorizontalLayout>
+            
+            <!--Moving Speed 文本编辑-->
+            <label  text="*151" resourcetext="true" pos="60,20,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  font="3"></label>
+            <!--Enhance Pointer Precision 文本编辑-->
+            <HorizontalLayout float="true" pos="60,40,0,0" width="300" height="40">
+			        <CheckBox name="result_mouse_system_iscontrol_6662" text="*152" resourcetext="true"  autocalcwidth="true"  font="2" Style="cb_style1" visible="false" /> 
+		        </HorizontalLayout>
+            <!--Moving Speed 滑块编辑-->
+            <Slider name="mouse_system_speed_6662" float="true"  pos="65,55,0,0" min="1" max="11" width="280" height="10"
+                        bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                        foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                        thumbimage="file='Image/thumb.png'" 
+                        thumbpushedimage="file='Image/thumb.png'" 
+                        thumbhotimage="file='Image/thumb.png'"/>           
+            <!--Moving Speed 滑块的数字文本编辑-->
+            <HorizontalLayout float="true" pos="75,75,0,0" width="280" height="20" bkcolor="#0000FF00">
+              <label text="1"  textcolor="#FFFFFFFF"/>
+              <label text="2"  textcolor="#FFFFFFFF"/>
+              <label text="3"  textcolor="#FFFFFFFF"/>
+              <label text="4"  textcolor="#FFFFFFFF"/>
+              <label text="5"  textcolor="#FFFFFFFF"/>
+              <label text="6"  textcolor="#FFFFFFFF"/>
+              <label text="7"  textcolor="#FFFFFFFF"/>
+              <label text="8"  textcolor="#FFFFFFFF"/> 
+              <label text="9"  textcolor="#FFFFFFFF"/>
+              <label text="10" textcolor="#FFFFFFFF"/>   
+              <label text="11" textcolor="#FFFFFFFF"/>   
+            </HorizontalLayout>
+            
+            <!--Double Click Speed 文本编辑-->
+            <label  text="*153" resourcetext="true" pos="60,120,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFF00"  font="3"></label>
+            <!--Double Click Speed 滑块编辑-->
+            <Slider name="mouse_system_double_speed_6662" float="true"  pos="65,155,0,0" min="1" max="11" width="280" value="6" height="10"
+                        bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                        foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                        thumbimage="file='Image/thumb.png'" 
+                        thumbpushedimage="file='Image/thumb.png'" 
+                        thumbhotimage="file='Image/thumb.png'" />           
+             <!--Double Click Speed 滑块的数字文本编辑-->
+             <HorizontalLayout float="true" pos="75,175,0,0" width="280" height="20" bkcolor="#0000FF00">
+              <label text="1"  textcolor="#FFFFFFFF"/>
+              <label text="2"  textcolor="#FFFFFFFF"/>
+              <label text="3"  textcolor="#FFFFFFFF"/>
+              <label text="4"  textcolor="#FFFFFFFF"/>
+              <label text="5"  textcolor="#FFFFFFFF"/>
+              <label text="6"  textcolor="#FFFFFFFF"/>
+              <label text="7"  textcolor="#FFFFFFFF"/>
+              <label text="8"  textcolor="#FFFFFFFF"/> 
+              <label text="9"  textcolor="#FFFFFFFF"/>
+              <label text="10" textcolor="#FFFFFFFF"/>   
+              <label text="11" textcolor="#FFFFFFFF"/>   
+            </HorizontalLayout>
+            
+            <!--Rolling Speed 文本编辑-->
+            <label  text="*154" resourcetext="true" pos="60,220,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFF00"  font="3"></label>
+            <!--Scroll One Screen At A Time 编辑-->            
+		        <Container float="true" pos="60,300,0,0" width="300" height="20" >
+			        <CheckBox name="result_mouse_system_isscreen_6662" text="*155"  resourcetext="true" pos="0,0,0,0" 
+              textcolor="#FFFFFFFF" textpadding="25,0,0,0" align="left"  visible="true"  /> 
+		        </Container> 
+            <!--Rolling Speed 滑块编辑-->
+            <Slider name="mouse_system_screen_speed_6662" float="true"  pos="65,245,0,0" width="280" height="10" min="1" max="11" value="6" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'" /> 
+             <!--Rolling Speed 滑块的数字文本编辑-->
+             <HorizontalLayout float="true" pos="75,270,0,0" width="280" height="20" bkcolor="#0000FF00">
+              <label text="1"  textcolor="#FFFFFFFF"/>
+              <label text="2"  textcolor="#FFFFFFFF"/>
+              <label text="3"  textcolor="#FFFFFFFF"/>
+              <label text="4"  textcolor="#FFFFFFFF"/>
+              <label text="5"  textcolor="#FFFFFFFF"/>
+              <label text="6"  textcolor="#FFFFFFFF"/>
+              <label text="7"  textcolor="#FFFFFFFF"/>
+              <label text="8"  textcolor="#FFFFFFFF"/> 
+              <label text="9"  textcolor="#FFFFFFFF"/>
+              <label text="10" textcolor="#FFFFFFFF"/>   
+              <label text="11" textcolor="#FFFFFFFF"/>   
+            </HorizontalLayout>
+                       
+            <!--Report Rate文本编辑-->
+            <label  text="*128" resourcetext="true" pos="60,340,0,0" width="280" height="30" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFF00"  font="3"></label>
+            <!--Report Rate选项编辑-->
+            <HorizontalLayout float="true" pos="60,370,0,0" width="380" height="20"  enabled="false"  >
+			        <CheckBox name="result_report_rate1_6662" text="125Hz" width="70" autocalcwidth="true" visible="true" group="report_rate" 
+               align="left" textpadding="20,0,0,0"/> 
+              <CheckBox name="result_report_rate2_6662" text="250Hz"  width="70" autocalcwidth="true" visible="true" group="report_rate" 
+               align="left" textpadding="20,0,0,0"/> 
+              <CheckBox name="result_report_rate3_6662" text="500Hz"   width="70" autocalcwidth="true"  visible="true" group="report_rate" 
+               align="left" textpadding="20,0,0,0"/> 
+              <CheckBox name="result_report_rate4_6662" text="1000Hz Overclock (BETA)"  width="400" autocalcwidth="true"  visible="true" group="report_rate"
+               align="left" textpadding="20,0,0,0"/> 
+		        </HorizontalLayout>
+ <!--新增-->
+             <Container float="true" pos="60,325,0,0" width="300" height="120" bkcolor="#00F00ff0" enabled="true" visible="false">
+
+              <TransparentButton name="result_report_icon_rate1_6662" enabled="true" pos ="10,10,0,0" float="true" width="225" height="115"  bkcolor="#00F00000" 
+                    normalimage="Image/report_125_down.png"  hotimage="Image/report_125_hot.png" pushedimage="Image/report_125_up.png"   />
+                    <TransparentButton name="result_report_icon_rate2_6662" enabled="true" pos ="10,10,0,0" float="true" width="225" height="115"  bkcolor="#00F00000"
+                    normalimage="Image/report_250_down.png"  hotimage="Image/report_250_hot.png" pushedimage="Image/report_250_up.png"   />
+                    <TransparentButton name="result_report_icon_rate3_6662" enabled="true" pos ="10,10,0,0" float="true" width="225" height="115"  bkcolor="#00F00000" 
+                    normalimage="Image/report_500_down.png"  hotimage="Image/report_500_hot.png" pushedimage="Image/report_500_up.png"   />
+                    <TransparentButton name="result_report_icon_rate4_6662" enabled="true" pos ="10,10,0,0" float="true" width="225" height="115"  bkcolor="#00F00000" 
+                    normalimage="Image/report_1000_down.png"  hotimage="Image/report_1000_hot.png" pushedimage="Image/report_1000_up.png"   />
+             </Container>
+
+            <!--DPI Setting 文本编辑-->
+            <label  text="*156" resourcetext="true" pos="440,183,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFF00"  font="3"></label>
+            <!--DPI Setting 选框编辑-->
+            <Combo name="result_DPI_count_setting_6662" visible="false" float="true"  itembkcolor="#FF323232" itemtextcolor="#FFFFFFFF"  itemhotbkcolor="#0xFFc8c8c8"   itemselectedtextcolor ="#0x000000" textcolor="#FF000000" pos="540, 160, 0, 0" width="160" height="19" normalimage="Image/Combo_nor.png" hotimage="Image/Combo_over.png" pushedimage="Image/Combo_over.png" textpadding="5,1,1,1" >
+              <ListLabelElement text="1" />
+              <ListLabelElement text="2" />
+              <ListLabelElement text="3" />
+              <ListLabelElement text="4" />
+              <ListLabelElement text="5" />
+              <ListLabelElement text="6" />
+              <ListLabelElement text="7" />
+		        </Combo>
+            
+            <!--DPI 1 选框及文本编辑-->
+            <Container float="true" pos="440,223,0,0" width="55" height="15" bkcolor="#00000000">
+              <CheckBox name="result_DPI1_check_6662" text=" DPI1" width="0" autocalcwidth="true" pos="5,5,0,0" visible="true" group="settingDPI_6662" Style="cb_style1" />
+            </Container>
+            <!--DPI 1 数值编辑-->
+            <Edit name="result_DPI1_edit_6662" float="true" text="800" pos="725,223,0,0" numberonly="true"  width="45" height="20" disabledtextcolor="#FFFFFFFF"
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true"  mouse="false"
+		              userdata="200,400,600,800,1000,1200,1600,2000,2400,3200,4800,6400,8000,10000,12000,20000,"/>
+            <!--DPI 1滑块 选框编辑-->
+            <Slider name="result_DPI1_slider_6662" float="true" pos="500,226,0,0" width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'" />  
+            <!--DPI 1 颜色编辑-->
+            <Button name="result_DPI1_color_6662" bordersize="2" float="true" pos="775,223,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" bordercolor="#00788383" 
+                    textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" /> 
+            
+            <!--DPI 2-->
+            <Container float="true" pos="440,253,0,0" width="55" height="15" bkcolor="#0000FF00">
+              <CheckBox name="result_DPI2_check_6662" text=" DPI2" width="0" autocalcwidth="true" pos="5,5,0,0" visible="true" group="settingDPI_6662" Style="cb_style1" />
+            </Container>
+            <Edit name="result_DPI2_edit_6662" float="true" text="1600" pos="725,253,0,0" numberonly="true"  width="45" height="20"  disabledtextcolor="#FFFFFFFF"
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true" mouse="false"/>
+            <Slider name="result_DPI2_slider_6662" float="true"  pos="500,256,0,0"  width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'"  />  
+            <Button name="result_DPI2_color_6662" bordersize="2" float="true" pos="775,253,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" bordercolor="#00788383" 
+                    textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" /> 
+
+            <!--DPI 3-->
+            <Container float="true" pos="440,283,0,0" width="55" height="15" bkcolor="#0000FF00">
+              <CheckBox name="result_DPI3_check_6662" text=" DPI3" width="0" autocalcwidth="true" pos="5,5,0,0"  visible="true" group="settingDPI_6662" Style="cb_style1" />
+            </Container>
+            <Edit name="result_DPI3_edit_6662" float="true" text="800" pos="725,283,0,0" numberonly="true"  width="45" height="20"  disabledtextcolor="#FFFFFFFF" 
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true"  mouse="false"/>
+            <Slider name="result_DPI3_slider_6662" float="true"  pos="500,286,0,0"  width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'" />  
+            <Button name="result_DPI3_color_6662" bordersize="2" float="true" pos="775,283,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" bordercolor="#00788383" 
+                    textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+
+            <!--DPI 4-->
+            <Container float="true" pos="440,313,0,0" width="55" height="15" bkcolor="#0000FF00">
+              <CheckBox name="result_DPI4_check_6662" text=" DPI4" width="0" autocalcwidth="true" pos="5,5,0,0" visible="true" group="settingDPI_6662" Style="cb_style1"  />
+            </Container>
+            <Edit name="result_DPI4_edit_6662" float="true" text="800" pos="725,313,0,0" numberonly="true"  width="45" height="20"  disabledtextcolor="#FFFFFFFF" 
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true"  mouse="false"/>
+            <Slider name="result_DPI4_slider_6662" float="true"  pos="500,316,0,0" width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'"  />  
+            <Button name="result_DPI4_color_6662" bordersize="2" float="true" pos="775,313,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" 
+                    bordercolor="#00788383" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+
+            <!--DPI 5-->
+            <Container float="true" pos="440,343,0,0" width="55" height="15" bkcolor="#0000FF00">
+              <CheckBox name="result_DPI5_check_6662" text=" DPI5" width="0" autocalcwidth="true" pos="5,5,0,0"  visible="true" group="settingDPI_6662" Style="cb_style1"  />
+            </Container>
+            <Edit name="result_DPI5_edit_6662" float="true" text="800" pos="725,343,0,0" numberonly="true"  width="45" height="20"  disabledtextcolor="#FFFFFFFF" 
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true" mouse="false"/>
+            <Slider name="result_DPI5_slider_6662" float="true"  pos="500,346,0,0" width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'"  />  
+            <Button name="result_DPI5_color_6662" bordersize="2" float="true" pos="775,343,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" 
+                    bordercolor="#00788383" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+
+            <!--DPI 6-->
+            <Container float="true" pos="440,373,0,0" width="55" height="15" bkcolor="#0000FF00">
+              <CheckBox name="result_DPI6_check_6662" text=" DPI6" width="0" autocalcwidth="true" pos="5,5,0,0" visible="true" group="settingDPI_6662" Style="cb_style1" />
+            </Container>
+            <Edit name="result_DPI6_edit_6662" float="true" text="800" pos="725,373,0,0" numberonly="true"  width="45" height="20"  disabledtextcolor="#FFFFFFFF" 
+                  bordercolor="#FFFFFFFF" bordersize="1" bkcolor="#00000000" enabled="false" font="2" align="left" readonly="true"  mouse="false"/>
+            <Slider name="result_DPI6_slider_6662" float="true"  pos="500,376,0,0" width="220" height="10" value="6" min="0" max="15" 
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'" />  
+            <Button name="result_DPI6_color_6662" bordersize="2" float="true" pos="775,373,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" 
+                    bordercolor="#00788383" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+
+            <!--DPI 7-->
+            <Container float="true" pos="390,380,0,0" width="55" height="15" bkcolor="#0000FF00" visible="false">
+              <CheckBox name="result_DPI7_check_6662" text=" DPI7" width="0" autocalcwidth="true" pos="5,5,0,0"  visible="true" group="settingDPI_6662"   Style="cb_style1"  />
+            </Container>
+            <Edit name="result_DPI7_edit_6662" float="true" visible="false" text="800" pos="675,380,0,0" numberonly="true"  width="45" height="20" disabledtextcolor="#FFFFFFFF" 
+                  bordercolor="#ff898989" bkcolor="#FF000000" enabled="false" font="2" align="right" readonly="true"/>
+            <Slider name="result_DPI7_slider_6662" float="true" pos="500,383,0,0" width="220" height="12" value="6" min="0" max="15"  visible="false" 
+                    bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                    foreimage="file='Image/bar_fg.png' corner='6,0,6,0' mask='#FFFF00FF'"  />  
+            <Button name="result_DPI7_color_6662" bordersize="2" float="true" visible="false" pos="725,380,0,0" enabled="true" width="20" height="20" bkcolor="#FF00FFFF" 
+                    bordercolor="#00788383" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+
+
+          </Container>
+        </Container>
+         
+        <!--LED 页面编辑-->
+        <Container float="true" pos="90,15,0,0" enabled="true" width="850" height="420" bkimage="Image/mouse_led_bg.png">
+          <Container name="led_Settings_page_6662" enabled="true">
+           <!--Brightness Setting 文本编辑-->
+           <label  text="*157" resourcetext="true" pos="120,30,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFFFFFFF"  font="3"></label> 
+           <CheckBox name="result_LED_light_all_6662" text="*158" resourcetext="true" width="0" autocalcwidth="true" pos="120,70,0,0" float="true" height="20"
+                align="left" textpadding="23, 0, 0, 0" group="led_light"  />
+           <CheckBox name="result_LED_light_half_6662" text="*159" resourcetext="true" width="0" autocalcwidth="true" pos="320,70,0,0" float="true" height="20"
+                align="left" textpadding="23, 0, 0, 0" group="led_light" />
+
+          
+           <!--LED Mode 文本编辑-->
+           <label  text="*160" resourcetext="true" pos="120,130,0,0" width="300" height="30" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FF3CB4FF"  font="3"></label> 
+            <CheckBox name="result_LED_mode_0_6662" text="*161" resourcetext="true" width="0" autocalcwidth="true" pos="120,170,0,0"  userdata="1" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode"  />
+              <!--Colorful Light-->
+            <CheckBox name="result_LED_mode_1_6662" text="*162" resourcetext="true" width="0" autocalcwidth="true" pos="320,170,0,0"  userdata="2" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode" />         
+            <!--Neon-->
+            <CheckBox name="result_LED_mode_2_6662" text="*072" resourcetext="true" width="0" autocalcwidth="true" pos="520,170,0,0" userdata="3" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode"  />     
+             <!--Dynamic Zone-->
+            <CheckBox name="result_LED_mode_3_6662" text="*163" resourcetext="true" width="0" autocalcwidth="true" pos="120,210,0,0" userdata="4" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode"  />
+
+            <!--Waltz-->
+            <CheckBox name="result_LED_mode_4_6662" text="*164" resourcetext="true" width="0" autocalcwidth="true" pos="320,210,0,0"  userdata="5" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode" />
+              <!--4-Seasons-->
+            <CheckBox name="result_LED_mode_5_6662" text="*165" resourcetext="true" width="0" autocalcwidth="true" pos="520,210,0,0"  userdata="6" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode" />
+            <!--off-->
+            <CheckBox name="result_LED_mode_6_6662" text="*070" resourcetext="true" width="0" autocalcwidth="true" pos="120,250,0,0"  userdata="7" height="20" float="true"
+              align="left" textpadding="23, 0, 0, 0" group="led_mode" />
+
+            <!--Speed 文本编辑-->
+            <label  text="*077" resourcetext="true" pos="120,320,0,0" width="300" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FF3CB4FF"  font="3"></label> 
+            <label  text="*184" resourcetext="true" pos="460,380,0,0" width="190" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FF3CB4FF"  font="3" visible="false" ></label> 
+	          <label  text="*185" resourcetext="true" pos="757,380,0,0" width="190" height="20" float="true" textcolor="#FFFFFFFF" disabledtextcolor="#FF3CB4FF"  font="3" visible="false" ></label> 
+	    
+            <!--Speed 滑块编辑 userdata="RGB" userdata="MCULED-->
+            <Slider name="result_mode_speed_6662"  float="true" pos="120,350,0,0" width="220" height="10" value="6"  min="0" max="7"  userdata="MCULED"
+                  bkimage="file='Image/bar_bg.png' corner='0,0,0,0' mask='#FF0000FF'" 
+                  foreimage="file='Image/bar_fg.png' corner='26,0,6,0' mask='#FFFFFFFF'" 
+                  thumbimage="file='Image/thumb.png'" 
+                  thumbpushedimage="file='Image/thumb.png'" 
+                  thumbhotimage="file='Image/thumb.png'"  />            
+             <!--Speed 滑块数字文本编辑-->
+             <HorizontalLayout float="true" pos="120,365,0,0" width="225" height="10" bkcolor="#0000FF00">
+              <label text="1"  textcolor="#FFFFFFFF"/>
+              <label text="2"  textcolor="#FFFFFFFF"/>
+              <label text="3"  textcolor="#FFFFFFFF"/>
+              <label text="4"  textcolor="#FFFFFFFF"/>
+              <label text="5"  textcolor="#FFFFFFFF"/>
+              <label text="6"  textcolor="#FFFFFFFF"/>
+              <label text="7"  textcolor="#FFFFFFFF"/>
+              <label text="8"  textcolor="#FFFFFFFF"/> 
+            </HorizontalLayout>
+
+            <Container float="true" pos="9440,10,0,0" width="400" height="400" bkcolor="#0000FF00" font="2">
+              <Button name="led_light_1_6662" bordersize="2" float="true" pos="10,10,0,0" enabled="true" width="140" height="140" />
+            </Container>
+
+          </Container>
+        </Container>
+
+        <!--fire macro 页面编辑-->
+        <Container float="true" pos="90,15,0,0" enabled="true" width="850" height="420">
+          <Container name="fire_macro_settings_page_6662" enabled="true">
+            <FireMacroSettingPage_6662 name="FireMacroSetting_page_6662" />
+          </Container>
+        </Container> 
+
+      </AnimationTabLayout>
+
+      <VerticalLayout float="true" pos="40,580,0,0" enabled="true" width="1000" height="80">
+        <!--reset 编辑-->
+        <Button name="reset_data_6662_1" font="2" float="true" text="*006" resourcetext="true" pos="820,10,0,0"  width="129" height="32"  
+        textcolor="#FFffffff" align="center" normalimage="Image/Save_Load_Reset_01.png" hotimage="Image/Save_Load_Reset_02.png" pushedimage="Image/Save_Load_Reset_03.png" font="3"/>
+        <Button name="reset_data_6662_2" font="2"  float="true" text="*006" resourcetext="true" pos="820,40,0,0"  width="129" height="32"  visible="false"
+        textcolor="#FFffffff"   align="center" normalimage="Image/Save_Load_Reset_01.png" hotimage="Image/Save_Load_Reset_02.png" pushedimage="Image/Save_Load_Reset_03.png" font="3"/>
+        <Button name="reset_data_6662_3" font="2" float="true" text="*006" resourcetext="true" pos="820,70,0,0"  width="129" height="32"  visible="false"
+        textcolor="#FFffffff"  align="center" normalimage="Image/Save_Load_Reset_01.png" hotimage="Image/Save_Load_Reset_02.png" pushedimage="Image/Save_Load_Reset_03.png" font="3"/>
+        <!--save 编辑-->
+        <Button name="save_data_6662" font="2" float="true" text="*004" resourcetext="true" pos="00,10,0,0"  width="129" height="32"  
+        textcolor="#FFffffff"  align="center" normalimage="Image/Save_Load_Reset_01.png" hotimage="Image/Save_Load_Reset_02.png" pushedimage="Image/Save_Load_Reset_03.png" font="3"/>
+        <!--load 编辑-->
+        <Button name="import_data_6662" font="2" float="true" text="*005" resourcetext="true" pos="130,10,0,0"  width="129" height="32"  
+        textcolor="#FFffffff"  align="center" normalimage="Image/Save_Load_Reset_01.png" hotimage="Image/Save_Load_Reset_02.png" pushedimage="Image/Save_Load_Reset_03.png" font="3"/>
+      </VerticalLayout> 
+	  
+	  <VerticalLayout float="true" pos="390,0,0,0" enabled="true" width="340" height="200" visible="true">
+        <Button name="web_data_6662" font="2" float="true" pos="0,0,0,0"   width="340" height="200"  userdata="https://twitter.com/onlysterbr" normalimage="Image/logoo.png"/>
+      </VerticalLayout> 
+
+      <!--网址编辑-->
+      <VerticalLayout float="true" pos="810,0,0,0" enabled="true" width="180" height="60" visible="false">
+        <Button name="web_data_6662" font="2" float="true" pos="0,0,0,0"   width="180" height="60"  userdata="https://twitter.com/onlysterbr" normalimage="Image/WebS_01.png"/>
+      </VerticalLayout> 
+     
+    </VerticalLayout>
+</Window>
